@@ -11,9 +11,6 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
-  assume_role {
-    role_arn = "arn:aws:iam::315892902651:role/role_terraform"
-  }
 }
 
 resource "aws_instance" "first_instance" {
